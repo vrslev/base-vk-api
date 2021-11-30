@@ -37,3 +37,9 @@ profile = "black"
 typeCheckingMode = "strict"
 pythonVersion = "3.10"
 reportPrivateUsage = false
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "@overload",
+]
