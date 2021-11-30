@@ -5,7 +5,7 @@ description = "Base VK API client based on Pydantic models"
 authors = ["Lev Vereshchagin <mail@vrslev.com>"]
 repository = "https://github.com/vrslev/base-vk-api"
 license = "MIT"
-include = ["py.typed"]
+include = ["src/base_vk_api/py.typed"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
