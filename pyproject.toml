@@ -8,7 +8,7 @@ license = "MIT"
 include = ["src/base_vk_api/py.typed"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.9"
 requests = "^2.26.0"
 pydantic = "^1.8.2"
 pytest = {version = "6.2.5", optional = true}
@@ -28,14 +28,14 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.black]
-target-version = ["py310"]
+target-version = ["py39"]
 
 [tool.isort]
 profile = "black"
 
 [tool.pyright]
 typeCheckingMode = "strict"
-pythonVersion = "3.10"
+pythonVersion = "3.9"
 reportPrivateUsage = false
 
 [tool.coverage.report]
