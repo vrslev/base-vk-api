@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from json import JSONDecodeError
 from typing import Any, TypeVar, overload
 
@@ -8,6 +10,10 @@ __all__ = ["BaseVKAPI", "VKAPIError"]
 
 
 class VKAPIError(Exception):
+    response: requests.Response
+    error_code: int | None
+    error_msg: str | None
+
     def __init__(
         self,
         *args: Any,
@@ -38,6 +44,12 @@ _T = TypeVar("_T", bound=BaseModel)
 
 
 class BaseVKAPI:
+    token: str
+    endpoint: str
+    api_version: str
+    lang: str
+    _session: requests.Session
+
     def __init__(
         self,
         token: str,
