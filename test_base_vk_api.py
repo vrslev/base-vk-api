@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 from copy import copy
 from json import JSONDecodeError
 from typing import Any, Callable, Literal
