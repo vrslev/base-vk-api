@@ -101,7 +101,7 @@ def test_make_request(vk: BaseVKAPI, endpoint: str | None):
         url=f"{endpoint}/method/wall.get",
         json={"response": {"foo": "bar"}},
         match=[
-            responses.matchers.query_string_matcher(  # type: ignore
+            responses.matchers.query_string_matcher(
                 urlencode(
                     {
                         "access_token": vk.token,

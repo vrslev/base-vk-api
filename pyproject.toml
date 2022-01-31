@@ -38,6 +38,7 @@ profile = "black"
 typeCheckingMode = "strict"
 pythonVersion = "3.9"
 reportPrivateUsage = false
+reportUnnecessaryTypeIgnoreComment = "warning"
 
 [tool.coverage.report]
 exclude_lines = [
